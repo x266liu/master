@@ -3,11 +3,19 @@ from tkinter import ttk
 import l_toplevel
 import l_subwin
 
-class loonPlotFactory(Frame) :
-    def __init__(self, patent = None):
-        selffactory_tclcmd, factory_path, factory_window_title = "loon plot"
+class loonPlotFactory:
+    def __init__(self, factory_tclcmd, factory_path, factory_window_title="loon plot", parent = None):
+        self.factory_tclcmd = factory_tclcmd
+        self.factory_path = factory_path
+        self.factory_window_title = "loon plot"
+        self.parent = parent
     
-    
+    def lpf(self):
+        new.toplevel = True
+        
+        
+#Tk.call() tcl() in r
+
 
 root = Tk()
 root.title("loon plot")
